@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Night - Recomendaciones de Videojuegos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/s/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" title="GameNight">
+                <img src="logo.png" alt="GameNight Logo" id="logo">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="heart-container">
+                <div class="heart">
+                    <h1>GAME NIGHT</h1>
+                    <p class="tagline">Finalmente, la respuesta a "¿A qué deberíamos jugar hoy?"</p>
+
+                    <div class="game-selection">
+                        <div class="game-box your-game">
+                            <h2>Tu Juego</h2>
+                            <div class="game-poster" id="your-game-poster">
+                                <div class="selection-indicator">Selecciona un juego</div>
+                            </div>
+                        </div>
+
+                        <div class="plus-sign">+</div>
+
+                        <div class="game-box their-game">
+                            <h2>Su Juego</h2>
+                            <div class="game-poster" id="their-game-poster">
+                                <div class="selection-indicator">Selecciona un juego</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttons-container">
+                        <button id="random-combo" class="btn random">O prueba una<br>Combinación Aleatoria</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-container" id="search-container">
+                <input type="text" id="search-input" placeholder="Buscar juegos...">
+                <ul id="search-results" class="search-results"></ul>
+            </div>
+
+            <div class="recommendations-container" id="recommendations-container">
+                <h2>Recomendaciones para ti</h2>
+                <p class="recommendation-intro">Basado en tus selecciones, te recomendamos estos juegos:</p>
+                <div class="recommendations-grid" id="recommendations-grid"></div>
+                <div class="game-details" id="game-details">
+                    <div class="game-details-content">
+                        <img id="detail-poster" src="" alt="">
+                        <div class="game-info">
+                            <h3 id="detail-title"></h3>
+                            <p id="detail-year"></p>
+                            <p id="detail-genres"></p>
+                            <div id="detail-description"></div>
+                        </div>
+                    </div>
+                    <div class="buttons-container">
+                        <button id="back-to-recommendations" class="btn">Volver a Recomendaciones</button>
+                        <button id="start-over" class="btn">Comenzar de Nuevo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 | GameNight | Desarrollado para TFG</p>
+        <p>Powered by RAWG Video Games Database API</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
